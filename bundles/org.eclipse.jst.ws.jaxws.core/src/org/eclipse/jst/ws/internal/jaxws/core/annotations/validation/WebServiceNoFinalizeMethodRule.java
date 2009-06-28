@@ -10,10 +10,14 @@
  *******************************************************************************/
 package org.eclipse.jst.ws.internal.jaxws.core.annotations.validation;
 
+import static org.eclipse.jst.ws.internal.jaxws.core.utils.JAXWSUtils.FINALIZE;
+
 import java.util.Collection;
 
 import javax.jws.WebService;
 
+import org.eclipse.jst.ws.annotations.core.processor.AbstractAnnotationProcessor;
+import org.eclipse.jst.ws.annotations.core.utils.AnnotationUtils;
 import org.eclipse.jst.ws.internal.jaxws.core.JAXWSCoreMessages;
 
 import com.sun.mirror.declaration.AnnotationMirror;
@@ -27,7 +31,7 @@ import com.sun.mirror.declaration.TypeDeclaration;
  * @author sclarke
  *
  */
-public class WebServiceNoFinalizeMethodRule extends AbstractJAXWSAnnotationProcessor {
+public class WebServiceNoFinalizeMethodRule extends AbstractAnnotationProcessor {
 
     @Override
     public void process() {
@@ -38,12 +42,11 @@ public class WebServiceNoFinalizeMethodRule extends AbstractJAXWSAnnotationProce
                 .getDeclarationsAnnotatedWith(annotationDeclaration);
 
         for (Declaration declaration : annotatedTypes) {
-            Collection<AnnotationMirror> annotationMirrors = declaration.getAnnotationMirrors();
-            for (AnnotationMirror mirror : annotationMirrors) {
-                if (isFinalizeDefined(declaration)) {
-                    printError(mirror.getPosition(), 
-                                JAXWSCoreMessages.WEBSERVICE_OVERRIDE_FINALIZE_MESSAGE);
-                }
+            if (isFinalizeDefined(declaration)) {
+                AnnotationMirror annotationMirror = AnnotationUtils.getAnnotation(declaration,
+                        WebService.class);
+                printError(annotationMirror.getPosition(),
+                        JAXWSCoreMessages.WEBSERVICE_OVERRIDE_FINALIZE);
             }
         }
     }

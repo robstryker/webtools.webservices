@@ -148,6 +148,56 @@
     <module>tests/org.eclipse.wst.wsi.tests</module>
     <module>tests/org.eclipse.wst.ws.tests</module>
 
+    <module>bundles/org.eclipse.jst.ws.axis2.consumption.core</module>
+    <module>bundles/org.eclipse.jst.ws.axis2.consumption.ui</module>
+    <module>bundles/org.eclipse.jst.ws.axis2.core</module>
+    <module>bundles/org.eclipse.jst.ws.axis2.creation.core</module>
+    <module>bundles/org.eclipse.jst.ws.axis2.creation.ui</module>
+    <module>bundles/org.eclipse.jst.ws.axis2.ui</module>
+    <module>bundles/org.eclipse.jst.ws.annotations.core</module>
+    <module>bundles/org.eclipse.jst.ws.cxf.consumption.core</module>
+    <module>bundles/org.eclipse.jst.ws.cxf.consumption.ui</module>
+    <module>bundles/org.eclipse.jst.ws.cxf.core</module>
+    <module>bundles/org.eclipse.jst.ws.cxf.creation.core</module>
+    <module>bundles/org.eclipse.jst.ws.cxf.creation.ui</module>
+    <module>bundles/org.eclipse.jst.ws.cxf.ui</module>
+    <module>bundles/org.eclipse.jst.ws.jaxb.core</module>
+    <module>bundles/org.eclipse.jst.ws.jaxws.core</module>
+    <module>bundles/org.eclipse.jst.ws.jaxws.dom.integration</module>
+    <module>bundles/org.eclipse.jst.ws.jaxws.dom.runtime</module>
+    <module>bundles/org.eclipse.jst.ws.jaxws.dom.ui</module>
+    <module>bundles/org.eclipse.jst.ws.jaxws.ui</module>
+    <module>bundles/org.eclipse.jst.ws.jaxws.utils</module>
+    <module>docs/org.eclipse.jst.ws.axis2.ui.doc.user</module>
+    <module>docs/org.eclipse.jst.ws.cxf.doc.user</module>
+    <module>docs/org.eclipse.jst.ws.jaxws.doc.isv</module>
+    <module>docs/org.eclipse.jst.ws.jaxws.doc.user</module>
+    <module>docs/org.eclipse.jst.ws.jaxws.dom.doc.isv</module>
+    <module>features/org.eclipse.jst.ws.axis2tools.feature</module>
+    <module>features/org.eclipse.jst.ws.axis2tools_sdk.feature</module>
+    <module>features/org.eclipse.jst.ws.cxf.feature</module>
+    <module>features/org.eclipse.jst.ws.cxf_sdk.feature</module>
+    <module>features/org.eclipse.jst.ws.cxf_tests.feature</module>
+    <module>features/org.eclipse.jst.ws.jaxws.assembly.feature</module>
+    <module>features/org.eclipse.jst.ws.jaxws.assembly_sdk.feature</module>
+    <module>features/org.eclipse.jst.ws.jaxws.assembly_tests.feature</module>
+    <module>features/org.eclipse.jst.ws.jaxws.dom.feature</module>
+    <module>features/org.eclipse.jst.ws.jaxws.dom_sdk.feature</module>
+    <module>features/org.eclipse.jst.ws.jaxws.dom_tests.feature</module>
+    <module>features/org.eclipse.jst.ws.jaxws.feature</module>
+    <module>features/org.eclipse.jst.ws.jaxws_sdk.feature</module>
+    <module>features/org.eclipse.jst.ws.jaxws_tests.feature</module>
+    <module>features/org.eclipse.jst.ws.jaxws_userdoc.feature</module>
+    <module>tests/org.eclipse.jst.ws.axis2.tests.performance</module>
+    <module>tests/org.eclipse.jst.ws.cxf.tests</module>
+    <module>tests/org.eclipse.jst.ws.jaxb.core.tests</module>
+    <module>tests/org.eclipse.jst.ws.jaxws.core.tests</module>
+    <module>tests/org.eclipse.jst.ws.jaxws.dom.integration.tests</module>
+    <module>tests/org.eclipse.jst.ws.jaxws.dom.runtime.tests</module>
+    <module>tests/org.eclipse.jst.ws.jaxws.dom.ui.tests</module>
+    <module>tests/org.eclipse.jst.ws.jaxws.testutils</module>
+    <module>tests/org.eclipse.jst.ws.jaxws.utils.tests</module>
+
     <module>site</module>
     
   </modules>

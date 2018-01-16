@@ -56,11 +56,6 @@
               <artifactId>org.eclipse.jst.jee.web</artifactId>
               <version>0.0.0</version>
             </dependency>
-            <dependency>
-              <type>p2-installable-unit</type>
-              <artifactId>org.eclipse.jst.ws.jaxb.core</artifactId>
-              <version>0.0.0</version>
-	    </dependency>
           </dependencies>
           <bundleStartLevel>
             <bundle>

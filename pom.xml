@@ -95,7 +95,7 @@
     <module>core</module>
     <module>jaxws</module>
     <module>axis2</module>
-    <module>site</module>
+    <!--    <module>site</module> -->
     
   </modules>
 </project>

@@ -22,42 +22,14 @@
       <update label="%updateSiteName" url="http://download.eclipse.org/webtools/updates/"/>
    </url>
 
-   <plugin
-         id="org.eclipse.jst.ejb.doc.user"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"/>
-
-   <plugin
-         id="org.eclipse.jst.j2ee.infopop"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"/>
-
-   <plugin
-         id="org.eclipse.jst.j2ee.doc.user"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"/>
-
-   <plugin
-         id="org.eclipse.jst.jsp.ui.infopop"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"/>
-
-   <plugin
-         id="org.eclipse.jst.server.ui.infopop"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"/>
-
-   <plugin
-         id="org.eclipse.jst.server.ui.doc.user"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"/>
-
+   <requires>
+      <import plugin="org.eclipse.jst.ejb.doc.user" version="0.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jst.j2ee.infopop" version="0.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jst.j2ee.doc.user" version="0.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jst.jsp.ui.infopop" version="0.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jst.server.ui.infopop" version="0.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jst.server.ui.doc.user" version="0.0.0" match="greaterOrEqual"/>
+   </requires>
    <plugin
          id="org.eclipse.jst.ws.axis.infopop"
          download-size="0"
